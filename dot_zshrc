@@ -50,5 +50,5 @@ autoload -Uz compinit && compinit
 # ----- aliases -----------------------------------------------------------------------------------
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias graph='git log --all --decorate --oneline --graph'
-alias cz=chezmoi
+alias chz=chezmoi
 # -------------------------------------------------------------------------------------------------
