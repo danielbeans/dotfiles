@@ -12,3 +12,10 @@ Install and switch to ZSH
 ```sh
 sudo apt install zsh --yes && chsh -s $(which zsh) && exec /bin/zsh
 ```
+
+Add ASDF plugins
+```
+asdf plugin-add <plugin>
+asdf install <plugin> <lastest|version>
+asdf global|local <plugin> <lastest|version>
+```
