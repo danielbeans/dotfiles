@@ -1,2 +1,12 @@
+{{/* Default static values */}}
+
+{{/* Set specific linux os in form: 'linux-alpine' */}}
+{{ $osId := .chezmoi.os }}
+{{ if (and (eq .chezmoi.os "linux") (hasKey .chezmoi.osRelease "id")) }}
+  {{ $osId = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id }}
+{{ end }}
+
+##########################################
+
 [data]
-osId = {{ $osId | quote }}
+osId = {{ .chezmoi.os | quote }}

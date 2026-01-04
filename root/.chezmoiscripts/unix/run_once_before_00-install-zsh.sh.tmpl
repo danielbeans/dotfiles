@@ -1,0 +1,36 @@
+{{ if (ne .osid "windows") -}}
+#!/bin/bash
+
+# Exit on error
+set -e
+
+# Some linux distros run in root by default (think Alpine Docker image)
+# Check if sudo exists
+run_sudo_cmd() {
+  if command -v sudo >/dev/null 2>&1; then
+    sudo "$@"
+  else
+    "$@"
+  fi
+}
+
+echo "Ensuring Zsh binary is installed for: {{ .osid }}"
+
+# 1. Install Zsh Binary only
+if ! command -v zsh >/dev/null 2>&1; then
+    {{ if eq .osid "darwin" -}}
+    brew install zsh
+    {{ else if eq .osid "linux-ubuntu" "linux-debian" -}}
+    run_sudo_cmd apt-get update && sudo apt-get install -y zsh git
+    {{ else if eq .osid "linux-alpine" -}}
+    run_sudo_cmd apk add zsh git
+    {{ end }}
+fi
+
+# 2. Set Zsh as default shell
+if [ "$SHELL" != "$(which zsh)" ]; then
+    echo "Changing default shell to zsh..."
+    run_sudo_cmd chsh -s "$(which zsh)" "$USER"
+fi
+
+{{ end -}}
