@@ -39,7 +39,7 @@ https://hub.docker.com/_/debian?uuid=C2F835E1-E236-4B78-9E79-586F3764926B
 docker run -it debian:bookworm-slim bash -c "
   apt-get update && apt-get install -y sudo curl;
   useradd -m -s /bin/bash testuser;
-  echo 12345 | chpasswd;
+  echo 'testuser:12345' | chpasswd
   adduser testuser sudo;
   su - testuser
 "
