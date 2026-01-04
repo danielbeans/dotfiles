@@ -26,3 +26,25 @@ mise exec -- node my-script.js
 
 ## Ref 
 - https://github.com/KevinNitroG/dotfiles/tree/main
+
+## Testing
+
+Test setup using Docker
+
+### Linux
+
+https://hub.docker.com/_/debian?uuid=C2F835E1-E236-4B78-9E79-586F3764926B
+
+```sh
+docker run -it debian:bookworm-slim bash -c "
+  apt-get update && apt-get install -y sudo curl;
+  useradd -m -s /bin/bash testuser;
+  echo 'testuser:testuser' | chpasswd;
+  adduser testuser sudo;
+  su - testuser
+"
+```
+
+### Windows
+
+https://hub.docker.com/r/dockurr/windows?uuid=C2F835E1-E236-4B78-9E79-586F3764926B

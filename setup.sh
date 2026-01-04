@@ -5,7 +5,4 @@ curl https://mise.jdx.dev/install.sh | sh
 sh -c "$(curl -fsLS get.chezmoi.io)"
 
 # 3. Initialize chezmoi
-./bin/chezmoi init --apply https://github.com/danielbeans/dotfiles.git
-
-# 4. Install zsh
-sudo apt install zsh --yes && chsh -s $(which zsh) && exec /bin/zsh
+./bin/chezmoi init --apply --verbose https://github.com/danielbeans/dotfiles.git
