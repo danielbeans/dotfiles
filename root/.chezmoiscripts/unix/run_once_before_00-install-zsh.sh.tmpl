@@ -30,7 +30,7 @@ fi
 # Set Zsh as default shell
 if [ "$SHELL" != "$(which zsh)" ]; then
     echo "Changing default shell to zsh..."
-    run_sudo_cmd chsh -s "$(which zsh)" "$USER"
+    run_sudo_cmd chsh -s "$(which zsh)" && exec /bin/zsh
 fi
 
 {{ end -}}
