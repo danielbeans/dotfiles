@@ -2,8 +2,14 @@
 
 ### Windows
 
-```
+```ps1
 irm https://raw.githubusercontent.com/danielbeans/dotfiles/main/setup.ps1 | iex
+```
+
+### \*nix
+
+```sh
+sh -c "$(curl -fsLS https://raw.githubusercontent.com/danielbeans/dotfiles/main/setup.sh)"
 ```
 
 ```sh
