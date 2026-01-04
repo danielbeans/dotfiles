@@ -1,0 +1,18 @@
+##########################################
+
+{{ if eq .osId "windows" }}
+
+.zprofile
+.zshenv
+.zshrc
+.zshenv_private
+.zsh_history
+
+{{ else }}
+
+# Documents/PowerShell/
+# AppData/
+
+{{ end }}
+
+##########################################

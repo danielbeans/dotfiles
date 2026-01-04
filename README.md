@@ -6,26 +6,23 @@
 irm https://raw.githubusercontent.com/danielbeans/dotfiles/main/setup.ps1 | iex
 ```
 
-### \*nix
+### Unix
 
 ```sh
 sh -c "$(curl -fsLS https://raw.githubusercontent.com/danielbeans/dotfiles/main/setup.sh)"
 ```
 
-```sh
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0 && . "$HOME/.asdf/asdf.sh"
-asdf plugin add chezmoi && asdf install chezmoi latest && asdf global chezmoi latest
-chezmoi init --apply git@github.com:danielbeans/dotfiles.git
+## Usage
+
+### Mise
+
+See: https://mise.jdx.dev/getting-started.html#mise-exec-run
+
+```
+mise use --global node@24 # install node 24 and set it as the global default
+mise exec -- node my-script.js
+# run my-script.js with node 24...
 ```
 
-Install and switch to ZSH
-```sh
-sudo apt install zsh --yes && chsh -s $(which zsh) && exec /bin/zsh
-```
-
-Add ASDF plugins
-```
-asdf plugin-add <plugin>
-asdf install <plugin> <lastest|version>
-asdf global|local <plugin> <lastest|version>
-```
+## Ref 
+- https://github.com/KevinNitroG/dotfiles/tree/main
