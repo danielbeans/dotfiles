@@ -1,6 +1,10 @@
 ## Setup
 
-Uses [chezmoi](https://www.chezmoi.io) for dotfile management.
+### Windows
+
+```
+irm https://raw.githubusercontent.com/danielbeans/dotfiles/main/setup.ps1 | iex
+```
 
 ```sh
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0 && . "$HOME/.asdf/asdf.sh"
