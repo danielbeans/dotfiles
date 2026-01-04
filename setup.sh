@@ -2,10 +2,10 @@
 curl https://mise.jdx.dev/install.sh | sh
 
 # Install chezmoi
-sh -c "$(curl -fsLS get.chezmoi.io)"
+mise use --global chezmoi@latest
 
 # Initialize chezmoi
-./bin/chezmoi init --apply https://github.com/danielbeans/dotfiles.git
+mise exec -- chezmoi init --apply https://github.com/danielbeans/dotfiles.git
 
 # Run zsh
 exec /bin/zsh
