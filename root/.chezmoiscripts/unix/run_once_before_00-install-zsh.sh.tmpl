@@ -14,6 +14,9 @@ run_sudo_cmd() {
   fi
 }
 
+# Create zsh file to prevent zsh new user menu
+touch ~/.zshrc
+
 echo "Ensuring Zsh binary is installed for: {{ .osId }}"
 
 # Install Zsh Binary only

@@ -38,17 +38,7 @@ fi
 # -------------------------------------------------------------------------------------------------
 
 
-# ----- asdf --------------------------------------------------------------------------------------
-. "$HOME/.asdf/asdf.sh"
-# Append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
-# Initialise completions with ZSH's compinit
-autoload -Uz compinit && compinit
-# -------------------------------------------------------------------------------------------------
-
-
 # ----- aliases -----------------------------------------------------------------------------------
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias graph='git log --all --decorate --oneline --graph'
 alias chz=chezmoi
 # -------------------------------------------------------------------------------------------------
