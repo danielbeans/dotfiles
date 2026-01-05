@@ -3,13 +3,13 @@
 ### Windows
 
 ```ps1
-irm https://raw.githubusercontent.com/danielbeans/dotfiles/main/setup.ps1 | iex
+irm https://raw.githubusercontent.com/danielbeans/dotfiles/refs/heads/main/setup.ps1 | iex
 ```
 
 ### Unix
 
 ```sh
-sh -c "$(curl -fsLS https://raw.githubusercontent.com/danielbeans/dotfiles/main/setup.sh)"
+sh -c "$(curl -fsLS https://raw.githubusercontent.com/danielbeans/dotfiles/refs/heads/main/setup.sh)"
 ```
 
 ## Usage
