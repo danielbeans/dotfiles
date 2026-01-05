@@ -9,4 +9,4 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 Write-Host "Environment Path refreshed."
 
 # Init dotfiles repo
-chezmoi init --apply https://github.com/danielbeans/dotfiles.git
+chezmoi init --apply git@github.com:danielbeans/dotfiles.git
