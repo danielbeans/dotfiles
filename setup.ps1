@@ -2,7 +2,7 @@
 winget install jdx.mise
 
 # Install Chezmoi dotfile manager
-winget install twpayne.chezmoi
+iex "&{$(irm 'https://get.chezmoi.io/ps1')}"
 
 # Init dotfiles repo
 chezmoi init --apply https://github.com/danielbeans/dotfiles.git
