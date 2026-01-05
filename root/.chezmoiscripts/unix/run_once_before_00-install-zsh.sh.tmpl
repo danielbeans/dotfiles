@@ -21,6 +21,7 @@ echo "Ensuring Zsh binary is installed for: {{ .osId }}"
 
 # Install Zsh Binary only
 if ! command -v zsh >/dev/null 2>&1; then
+    :
     {{ if eq .osId "darwin" -}}
     brew install zsh
     {{ else if eq .osId "linux-ubuntu" "linux-debian" -}}
