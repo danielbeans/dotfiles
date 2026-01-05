@@ -9,7 +9,7 @@ irm https://raw.githubusercontent.com/danielbeans/dotfiles/refs/heads/main/setup
 ### Unix
 
 ```sh
-sh -c "$(curl -fsLS https://raw.githubusercontent.com/danielbeans/dotfiles/refs/heads/main/setup.shh)"
+sh -c "$(curl -fsLS https://raw.githubusercontent.com/danielbeans/dotfiles/refs/heads/main/setup.sh)"
 ```
 
 ## Usage
