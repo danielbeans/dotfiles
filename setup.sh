@@ -1,6 +1,6 @@
 MISE_BIN=~/.local/bin/mise
 
-# Install mise (if not present)
+# Install mise
 curl https://mise.jdx.dev/install.sh | sh
 
 # Install chezmoi
