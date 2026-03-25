@@ -45,4 +45,5 @@ eval "$(~/.local/bin/mise activate zsh)"
 # ----- aliases -----------------------------------------------------------------------------------
 alias graph='git log --all --decorate --oneline --graph'
 alias chz=chezmoi
+alias subl='"/mnt/c/Program Files/Sublime Text/subl.exe"'
 # -------------------------------------------------------------------------------------------------
