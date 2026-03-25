@@ -7,11 +7,6 @@
 
 {{ else }}
 
-.zprofile
-.zshenv
-.zshrc
-.zshenv_private
-.zsh_history
 **/*.zwc
 
 **/cache/
