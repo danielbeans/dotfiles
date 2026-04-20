@@ -8,7 +8,7 @@ refreshPeriod = "168h"
 stripComponents = 1
 type = "archive"
 url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
-include = ["lib/**", "plugins/**", "themes/**", "oh-my-zsh.sh"]
+include = ["*/lib/**", "*/plugins/**", "*/themes/**", "*/oh-my-zsh.sh"]
 
 [".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
 exact = true
@@ -16,7 +16,7 @@ refreshPeriod = "168h"
 stripComponents = 1
 type = "archive"
 url = "https://github.com/zsh-users/zsh-autosuggestions/archive/master.tar.gz"
-include = ["*.zsh", "VERSION"]
+include = ["*/*.zsh", "*/VERSION"]
 
 [".oh-my-zsh/custom/plugins/zsh-history-substring-search"]
 exact = true
@@ -31,7 +31,7 @@ refreshPeriod = "168h"
 stripComponents = 1
 type = "archive"
 url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/master.tar.gz"
-include = ["zsh-syntax-highlighting.zsh", "highlighters/**", ".version", ".revision-hash"]
+include = ["*/zsh-syntax-highlighting.zsh", "*/highlighters/**", "*/.version", "*/.revision-hash"]
 
 [".oh-my-zsh/custom/themes/powerlevel10k"]
 exact = true
@@ -39,7 +39,7 @@ refreshPeriod = "168h"
 stripComponents = 1
 type = "archive"
 url = "https://github.com/romkatv/powerlevel10k/archive/master.tar.gz"
-include = ["**/*.zsh", "**/*.zsh-theme", "config/*", "gitstatus/*"]
+include = ["*/*.zsh", "*/*.zsh-theme", "*/config/*", "*/gitstatus/*"]
 
 ##########################################
 
