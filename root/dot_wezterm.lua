@@ -52,7 +52,7 @@ config.keys = keys
 
 -- Set WSL default
 if wezterm.target_triple:find("windows") then
-	config.default_prog = { "wsl.exe", "-d", "Ubuntu" }
+	config.default_prog = { "wsl.exe", "~", "-d", "Ubuntu" }
 
 	config.launch_menu = {
 		{
@@ -61,7 +61,7 @@ if wezterm.target_triple:find("windows") then
 		},
 		{
 			label = "Ubuntu (WSL)",
-			args = { "wsl.exe", "-d", "Ubuntu" },
+			args = { "wsl.exe", "~", "-d", "Ubuntu" },
 		},
 	}
 end
